@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html id="main" lang="en" data-theme="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech|Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+    <script src="https://kit.fontawesome.com/20e4e45726.js" crossorigin="anonymous"></script>
+    <title>Weimin Wang</title>
+</head>
+<body>
+    <div id="nav">
+        <i id="nav-icon" onclick="toggleNavIcon()" class="fas fa-bars"></i>
+        <a id="logo" href="#">LOGO</a>
+        <div id="nav-links">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="toggle-button">
+                <i id="toggle-icon" class="far fa-moon"> </i>
+                <p id="toggle-text"> To Light Mode</p>
+            </button> 
+        </div>
+    </div>
+
+    <div id="sns-group">
+        <a class="sns" href="https://github.com/albeewang15" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="sns" href="https://www.linkedin.com/in/weiminwang15/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="sns" href="https://www.instagram.com/albeewang/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="sns" href="https://www.facebook.com/weii.wang2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <div id="email">
+        <p id="email-text" data-clipboard-text="weiminwang15@gmail.com">weiminwang15@gmail.com</p>
+    </div>
+
+    <div class="container">
+
+        <div class="intro">
+            <p id="hi">Hi, my name is</p>
+            <h1>Weimin Wang.</h1>
+            <h2>I build things for the web.</h2>
+            <p>I'm a web developer based in Tokyo, Japan<i class="fas fa-map-marker-alt"></i>
+                <br>I specialize in front-end development, and have experience in product management. 
+                <br>Bonus feature: I speak English, Chinese, and Japanese fluently.</p>
+            <button class="cta" data-clipboard-text="weiminwang15@gmail.com" data-tippy-content="Copy my email to clipboard :) "><i class="far fa-copy"></i> Get in Touch</button>
+        </div>
+
+        <div id="experience" data-aos="fade-in">
+            <h2>Where I've Worked</h2>
+            <div class="jobs">
+                <div class="tabs">
+                    <ul>
+                        <li class="tab-links active" onclick="displayJob(event, 'misumi')" id="misumi-tab">MISUMI Group Inc</li>
+                        <li class="tab-links" onclick="displayJob(event, 'squeeze')">SQUEEZE Inc</li>
+                    </ul>
+                </div>
+                <div class="job-panel">
+                    <div id="misumi" class="tab-content">
+                        <h4>Web Director <span><a href="https://www.misumi.co.jp/" target="_blank"> @MISUMI</a></span></h4>
+                        <h5>August 2018 - Present</h5>
+                        <ul>
+                            <li class="task">Bridged communication gap for tech team and the management or external stakeholders</li>
+                            <li class="task">Manage release schedule and conduct testings for quality assurance</li>
+                            <li class="task">Track landing page and site performances with Google Analytics, DOMO, and various BI tools</li>
+                        </ul>
+                    </div>
+                    <div id="squeeze" class="tab-content">
+                        <h4>Product Manager <span><a href="https://squeeze-inc.co.jp/" target="_blank"> @SQUEEZE</a></span></h4>
+                        <h5>August 2016 - May 2018</h5>
+                        <ul>
+                            <li class="task">Research on competitor Property Management System (PMS) features to understand market needs and lead releases of
+                                new product features</li>
+                            <li class="task">Align user hearings with business vision to set product priorities and release timeline</li>
+                            <li class="task">Design clear feature requirements and easy to understand wireframes (UI/UX) for the engineers to develop more
+                                efficiently</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="projects">
+            <h2>Featured Projects</h2>
+            <div class="featured-pjs">
+                <div class="pj-card">
+                    <img class="pj-img" src="images/restapi.jpg" alt="API Country Project">
+                    <div class="pj-detail">
+                        <h3>REST Countries API APP</h3>
+                        <div class="pj-description">
+                            <p>Fun project with <a href="https://www.frontendmentor.io/">frontendmentor</a>. Integrated the REST Countries API to pull country data and display details in modal view. Simple search and filter feature with vanilla JS.</p>
+                        </div>
+                        <p><span class="skill">API</span><span class="skill">JS</span><span class="skill">CSS Custom Property</span></p>
+                        <div class="pj-links">
+                            <a href="https://github.com/albeewang15/REST-COUNTRIES-API" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://albeewang15.github.io/REST-COUNTRIES-API/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pj-card inverse">
+                    <img class="pj-img" src="images/flyo_landing.jpg" alt="API Country Project">
+                    <div class="pj-detail">
+                        <h3>Flyo Dark Theme Landing Page</h3>
+                        <div class="pj-description">
+                            <p>Modern looking product landing page. Fully mobile responsive. </p>
+                        </div>
+                        <p><span class="skill">HTML</span><span class="skill">Flexbox</span><span class="skill">Responsive Design</span></p>
+                        <div class="pj-links">
+                            <a href="https://github.com/albeewang15/Flyo-Dark-Theme-Landing-Page-By-Frontend-Mentor" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://albeewang15.github.io/Flyo-Dark-Theme-Landing-Page-By-Frontend-Mentor/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pj-card">
+                    <img class="pj-img" src="images/restapi.jpg" alt="API Country Project">
+                    <div class="pj-detail">
+                        <h3>PJ NAME</h3>
+                        <div class="pj-description">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, voluptate eos obcaecati tenetur corrupti nostrum saepe voluptatum aut facilis aperiam delectus quisquam. Voluptatem similique vitae eius iusto labore laboriosam. Animi?</p>
+                        </div>
+                        <p><span class="skill">skill1</span><span class="skill">skill2</span></p>
+                        <div class="pj-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+        </div>    
+
+    </div>
+
+
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@5"></script>
+<script src="script.js"></script>
+</body>
+</html>
