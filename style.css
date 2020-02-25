@@ -181,6 +181,7 @@ li.task::before {
     right: 1.5em;
     display: flex;
     flex-direction: column;
+    margin: 0 20px;
     padding: 20px 5px;
     z-index: 1;
     height: 150px;
@@ -191,7 +192,7 @@ li.task::before {
 }
 
 div.pj-links {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 div.pj-links:hover {
@@ -288,7 +289,7 @@ div.pj-links:hover {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
     #nav-icon {
         display: block;
     }
@@ -311,6 +312,40 @@ div.pj-links:hover {
     #email {
         display: none;
     }
+
+    .featured-pjs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pj-card {
+        background: var(--alter-bg-color);
+        height: 300px;
+        width: 80vw;
+        padding: 5%;
+    }
+
+    .pj-img {
+        display: none;
+    }
+
+    .pj-detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inverse {
+        left: 0;
+        flex-direction: row;
+    }
+
+    .pj-description {
+        padding: 0.5em 0 1.5em 0;
+    }
+
+    
 }
 
 
